@@ -6,13 +6,18 @@ public class Employee {
     private double hoursWorked;
     private double payRate;
 
-    //ConsTructor
+
+
+
+    //Constructor
     public Employee(int employeeID, String name, double hoursWorked, double payRate) {
         this.employeeID = employeeID;
         this.name = name;
         this.hoursWorked = hoursWorked;
         this.payRate = payRate;
     }
+
+
 
     // Getters
     public int getEmployeeID() {
@@ -28,7 +33,22 @@ public class Employee {
         return payRate;
     }
 
+
+
     //Setters
+    public void setName(String Name) {
+        this.name = name;
+    }
+    public void setHoursWorked(double payRate) {
+        this.hoursWorked = hoursWorked;
+    }
+    public void setPayRate(double payRate) {
+        this.payRate = payRate;
+    }
+
+
+    //Gross pay
+
 
 
 
