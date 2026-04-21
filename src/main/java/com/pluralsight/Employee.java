@@ -1,7 +1,7 @@
 package com.pluralsight;
 
 public class Employee {
-    private int employeeID;
+    private int employeeId;
     private String name;
     private double hoursWorked;
     private double payRate;
@@ -10,8 +10,8 @@ public class Employee {
 
 
     //Constructor
-    public Employee(int employeeID, String name, double hoursWorked, double payRate) {
-        this.employeeID = employeeID;
+    public Employee(int employeeId, String name, double hoursWorked, double payRate) {
+        this.employeeId = employeeId;
         this.name = name;
         this.hoursWorked = hoursWorked;
         this.payRate = payRate;
@@ -20,8 +20,8 @@ public class Employee {
 
 
     // Getters
-    public int getEmployeeID() {
-        return employeeID;
+    public int getEmployeeId() {
+        return employeeId;
     }
     public String getName() {
         return name;
@@ -36,10 +36,10 @@ public class Employee {
 
 
     //Setters
-    public void setName(String Name) {
+    public void setName(String name) {
         this.name = name;
     }
-    public void setHoursWorked(double payRate) {
+    public void setHoursWorked(double hoursWorked) {
         this.hoursWorked = hoursWorked;
     }
     public void setPayRate(double payRate) {
