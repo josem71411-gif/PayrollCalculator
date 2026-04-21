@@ -48,8 +48,7 @@ public class Employee {
 
 
     //Gross pay
-
-
-
-
+    public double getGrossPay() {
+        return hoursWorked * payRate;
+    }
 }
