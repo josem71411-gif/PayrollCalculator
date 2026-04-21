@@ -2,17 +2,24 @@ package com.pluralsight;
 
 //Imports
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.util.Scanner;
 
 public class PayrollCalculator {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        String fileName = "employees.csv";
+        System.out.print("Enter the name of the emplyee file o process: ");
+        String inputFile = scanner.nextLine();
+
+        System.out.print("Enter the name of the payroll file to create: ");
+        String outputFile = scanner.nextLine();
 
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(fileName));
+            BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+            PrintWriter writer = new PrintWriter(new FileWriter(outputFile));
+
+
             reader.readLine();
             String line;
 
